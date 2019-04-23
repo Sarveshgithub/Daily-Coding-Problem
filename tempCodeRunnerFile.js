@@ -3,16 +3,14 @@
 
 function main(arr, k) {
     const unique = new Set();
-    for (let i = 0; i < arr.length; i++) {
-        if (unique.has(arr[i]))
+    arr.map(val => {
+        if (unique.has(val))
             return true;
-        unique.add(k - arr[i])
-    }
+        unique.add(k - val)
+    })
     return false;
 }
 
-console.log(main([1, 2, 2,], 3)) //true
-console.log(main([1, 2, 2,], 1)) //false
-console.log(main([1, 2, 2,], 5)) //false
+console.log(main([1,2,2,],2))
 
 
