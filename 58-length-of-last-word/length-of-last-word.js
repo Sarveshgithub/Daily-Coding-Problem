@@ -12,6 +12,6 @@ var lengthOfLastWord = function(s) {
             break
         }
     }
-    console.log('c>',c)
+    //console.log('c>',c)
     return c
 }
