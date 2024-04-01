@@ -16,7 +16,7 @@ var twoSum = function(numbers, target) {
             l++
         }
     }
-    console.log('rrr',l+1,r+1)
+    //console.log('rrr',l+1,r+1)
     return [l+1,r+1]
 
 };
